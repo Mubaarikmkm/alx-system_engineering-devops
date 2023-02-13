@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Check if the file iacta exists
+if [ -f "iacta" ]; then
+  # If it exists, duplicate the last line
+  tail -1 iacta >> iacta
+else
+  # If it does not exist, create it and add a single line
+  echo "iacta file not found, creating a new file with a single line." > iacta
+fi
+
