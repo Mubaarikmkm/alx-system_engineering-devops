@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# Find all .js files in the current directory and its subdirectories
+# and pipe the result to xargs to pass it as arguments to the rm command
+find . -type f -name "*.js" -print0 | xargs -0 rm
+
