@@ -1,8 +1,2 @@
 #!/bin/bash
-
-# Count the number of directories (including hidden) in the current directory
-count=$(find . -type d \( ! -name . \) \( ! -name .. \) -print | wc -l)
-
-# Print the result
-echo "Number of directories (including hidden) in the current directory: $count"
-
+find . -type d -not -name '.' | wc -l
