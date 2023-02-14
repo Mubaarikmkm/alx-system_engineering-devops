@@ -1,9 +1,2 @@
 #!/bin/bash
-
-# Check if the file ls_cwd_content exists
-if [ -f "ls_cwd_content" ]; then
-  # If it exists, overwrite it
-  ls -la > ls_cwd_content
-else
-  # If it does not exist, create it
-  ls -la > ls_cwd_content
+ ls -la > ls_cwd_content
